@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusThrift</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background-color: lightyellow;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color:black;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-item {
+      text-decoration: none;
+      color: grey;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .nav-item:hover {
+      color: yellow;
+    }
+
+    /* Background Image with Carousel Effect */
+    body {
+      
+      background-size: cover;
+      filter: brightness(70%);
+    }
+
+    /* Welcome Section styles */
+    .welcome-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 60px); /* Adjust based on navbar height */
+      margin-top: 60px; /* Account for fixed navbar */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .welcome-section h1 {
+      font-size: 36px;
+      color: black;
+      animation: slideDown 2s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="homepage.html" class="logo">CampusThrift</a>
+    <div class="nav-links">
+      <a href="homepage.html" class="nav-item">Home</a>
+      <a href="sell.html" class="nav-item">Sell</a>
+      <a href="signin.html" class="nav-item">Sign In</a>
+      <a href="signup.html" class="nav-item">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <h1>CampusThrift welcomes you!</h1>
+  </section>
+
+</body>
+</html>
+
+
